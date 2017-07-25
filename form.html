@@ -5,12 +5,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="">
+
 </head>
 <body>
-	<form action="http://localhost:3000/validar" method="post" accept-charset="utf-8">
-		<input type="hidden" name="usuario" value="3" >
-		<input type="hidden" name="pass" value="passwordfree">
-		<input type="submit" name="enviar" value="enviar">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+	<form id="form" action="http://localhost:3000/validar" method="post" accept-charset="utf-8">
+		<input id="usuario" type="hidden" name="usuario" value="3" >
+		<input id="pass" type="hidden" name="pass" value="passwordfree">
+		<input id="enviar" type="submit" name="enviar" value="enviar">
 	</form>
+<script>
+	var form = document.getElementById("form");
+	var pass = document.getElementById("pass");
+	form.addEventListener('submit', function(evt){
+		evt.preventDefault();
+		pass.value = CryptoJS.AES.encrypt(pass.value, "Secret Passphrase");
+		console.log(evt);
+		form.submit();
+	});
+</script>
 </body>
 </html>
