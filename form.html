@@ -14,14 +14,20 @@
 		<input id="pass" type="hidden" name="pass" value="passwordfree">
 		<input id="enviar" type="submit" name="enviar" value="enviar">
 	</form>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha512.js"></script> -->
 <script>
+    // var hash = CryptoJS.SHA512("Message");
 	var form = document.getElementById("form");
 	var pass = document.getElementById("pass");
 	form.addEventListener('submit', function(evt){
 		evt.preventDefault();
-		pass.value = CryptoJS.AES.encrypt(pass.value, "Secret Passphrase");
-		console.log(evt);
+		pass.value = CryptoJS.AES.encrypt(pass.value, "@bN~Ro)}=Fg_!1z<Ys:umjmP;DP;XW").toString();//envio pass como string
+
+		//pass.value = CryptoJS.MD5(pass.value);
+		//pass.value = CryptoJS.AES.encrypt(pass.value, "Secret Passphrase");
+		console.log(pass.value);
 		form.submit();
+		alert(pass.value);
 	});
 </script>
 </body>
