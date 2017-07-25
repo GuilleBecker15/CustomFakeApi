@@ -156,11 +156,12 @@
     "format": "eslint . --fix",
     "precommit": "npm test",
     "prepublishOnly": "npm run build && pkg-ok",
-    "start": "babel-node src/cli/bin",
+    "start" : "babel-node ./server.js",
     "test": "npm run test:cli && npm run test:server && eslint .",
     "test:cli": "npm run build && cross-env NODE_ENV=test mocha test/cli/*.js",
     "test:server": "cross-env NODE_ENV=test mocha test/server/*.js",
     "toc": "markdown-toc -i README.md"
+
   },
   "version": "0.11.2"
 }
