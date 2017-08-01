@@ -6,6 +6,6 @@ var router = jsonServer.router('db.json')
 
 server.use(middlewares)
 server.use(router)
-server.listen(process.env.PORT, function () {
+server.listen(process.env.PORT || 4000, function () {
   console.log('JSON Server is running')
 })
