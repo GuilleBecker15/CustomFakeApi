@@ -1,18 +1,11 @@
 {
   "users": [
     {
+      "name": "guillermo",
       "id": 1,
-      "name": "Lawrence",
-      "username": "tgreene",
-      "email": "rmatthews@babbleset.net",
-      "pass": "U2FsdGVkX18En4ayH8lYGrMqC79skJGPGwToiI+Vf9o=",
-      "address": "318 Scoville Plaza 2",
-      "city": "Winters",
-      "phone": "2-(572)789-4677",
-      "website": "youspan.gov",
-      "company": "Wordify",
-      "created_at": "2017-08-01T12:23:59.116Z",
-      "updated_at": "2017-08-01T12:23:59.116Z"
+      "username": "Becker",
+      "email": "guille.becker.15",
+      "pass": "secreto"
     },
     {
       "id": 2,
@@ -195,15 +188,15 @@
     {
       "name": "guillermo",
       "username": "Becker",
-      "email": "guille.becker.15",
+      "email": "jaime@gmail",
       "pass": "U2FsdGVkX1/GumH7j0NwXTBSm9xJqVN4CcEHvlk+5uo=",
       "id": 19
     },
     {
       "name": "guillermo",
       "username": "Becker",
-      "email": "guille.becker.15",
-      "pass": "U2FsdGVkX1/MRXpEnNRT56koquRBwO6bfp7rc95NUoI=",
+      "email": "guille.becker.15@adassadsa",
+      "pass": "U2FsdGVkX19nb/ZAYTUIGgj4O6XREBj1dmX9/RHhfpo=",
       "id": 20
     }
   ],
@@ -282,7 +275,7 @@
     },
     {
       "id": 10,
-      "title": "Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit",
+      "title": "Lorem",
       "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
       "user_id": 10,
       "created_at": "2017-08-01T12:24:38.656Z",
@@ -292,7 +285,7 @@
   "comments": [
     {
       "id": 1,
-      "name": "Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit",
+      "name": "Lorem",
       "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
       "post_id": 1,
       "user_id": 4,
